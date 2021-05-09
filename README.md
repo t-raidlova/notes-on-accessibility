@@ -19,7 +19,7 @@
 - [Google Web Accessibility course](https://www.udacity.com/course/web-accessibility--ud891)
 - [Marcy Sutton - Start Building Accessible Web Applications Today](https://egghead.io/courses/start-building-accessible-web-applications-today)
 
-- [Jon Kuperman - Introduction to Accessibility](https://learn-a11y.netlify.app/focus-management/index.html)
+- [Jon Kuperman - Introduction to Accessibility](https://learn-a11y.netlify.app.html)
 - [Tatiana T. Mac - Hacking Digital Styleguides for Accessibility](https://www.skillshare.com/classes/Hacking-Digital-Styleguides-for-Accessibility-Type-Color-Imagery/1920202818)
 
 ---
@@ -28,7 +28,7 @@
 
 ### **Accessible buttons**
 
-#### button element with **icon**
+#### button element with icon
 
 - [visually hidden class](https://gist.github.com/t-raidlova/a3d7b7690dbc88633610312f8317e6ba)
 
@@ -42,7 +42,7 @@
 #### div element with svg
 
 ```html
-<div role="button" tabindex="0">
+<div role="button" tabindex="0" aria-label="Alert the word hello" onclick="alert('hello')" onkeyup="alert('hello')>
   <svg>
     <title id="svg-title">Accessible name here</title>
   </svg>
@@ -58,7 +58,7 @@
 - **positive value** means should be focusable and reachable via sequential keyboard navigation; its relative order is defined by the value of the attribute: the sequential follow the increasing number of the tabindex. If several elements share the same tabindex, their relative order follows their relative position in the document.
 
 ```html
-<div tabindex="“0”">I’m focusable</div>
+<div tabindex="0">I’m focusable</div>
 ```
 
 ### Skip Links
